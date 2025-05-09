@@ -1,61 +1,123 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>یادداشت‌های زینب</title>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Vazirmatn', sans-serif;
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
-      background: #fff;
-      color: #222;
+      padding: 0;
+      height: 100%;
+      direction: rtl;
+      background-color: #fdfdfd;
+      font-family: 'Vazir', sans-serif;
     }
-    header, footer {
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #f7f1f1;
+      padding: 20px;
       text-align: center;
-      padding: 1rem;
-      background: #f3f3f3;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #444;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
     nav a {
-      margin: 0 10px;
       text-decoration: none;
-      color: #0077cc;
+      color: #555;
+      margin: 0 10px;
+      font-size: 16px;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: #b0413e;
+    }
+
     .container {
+      width: 100%;
       max-width: 700px;
       margin: 0 auto;
       padding: 20px;
     }
-    .note-title {
-      text-align: center;
-      margin: 2rem 0;
-    }
-    .note-list a {
-      display: block;
-      margin: 1rem 0;
-      color: #000;
+
+    .post-title {
+      font-size: 20px;
+      color: #333;
       text-decoration: none;
-      font-weight: bold;
+    }
+
+    .post-title:hover {
+      color: #b0413e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+      background-color: #f7f1f1;
+      margin-top: auto;
+    }
+
+    .category-list a {
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .category-list a:hover {
+      color: #b0413e;
+    }
+
+    .post-list {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
+
   <header>
+    <h1>یادداشت‌های زینب</h1>
     <nav>
       <a href="index.html">خانه</a>
-      <a href="categories.html">دسته بندی</a>
+      <a href="categories.html">دسته‌بندی</a>
     </nav>
   </header>
+
   <div class="container">
-    <h1 class="note-title">یادداشت‌های زینب</h1>
-    <div class="note-list">
-      <a href="note1.html">یک روز بارانی</a>
-      <!-- یادداشت‌های دیگر اینجا اضافه می‌شوند -->
+    <!-- نمایش یادداشت‌ها -->
+    <div class="post-list">
+      <h2><a class="post-title" href="note1.html">اولین نوشته‌ام: یک روز بارانی</a></h2>
+      <h2><a class="post-title" href="note2.html">دومین نوشته‌ام: سفر به شمال</a></h2>
     </div>
   </div>
+
   <footer>
-    طراحی شده با عشق توسط زینب
+    طراحی شده با عشق توسط زینب | 🗿 کاکاسنگی
   </footer>
+
 </body>
 </html>

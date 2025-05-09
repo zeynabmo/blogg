@@ -2,51 +2,113 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>از انشای قلم تا ساخت راه اندازی وبلاگ شخصی</title>
+  <title>اولین نوشته‌ام: یک روز بارانی | یادداشت‌های زینب</title>
   <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Vazir', sans-serif;
-      direction: rtl;
-      background-color: #fff;
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
+      direction: rtl;
+      background-color: #fdfdfd;
+      font-family: 'Vazir', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    header {
+      background-color: #f7f1f1;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #444;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #555;
+      margin: 0 10px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b0413e;
+    }
+
+    .container {
+      flex: 1;
       padding: 30px;
-      color: #333;
-      max-width: 700px;
+      max-width: 800px;
       margin: auto;
     }
-    a {
-      color: #d81b60;
-      text-decoration: none;
-      font-size: 1em;
+
+    .content {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 30px;
     }
-    h1 {
-      font-size: 2em;
-      color: #6a1b9a;
+
+    .image {
+      width: 90%; /* عرض عکس به اندازه عرض صفحه */
+      height: auto; /* ارتفاع عکس به صورت خودکار مطابق با عرض تغییر می‌کنه */
+      max-width: 800px; /* حداکثر عرض عکس 800 پیکسل */
+      margin-bottom: 20px; /* فاصله پایین عکس */
     }
-    time {
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
       color: #888;
-      font-size: 0.9em;
-    }
-    p {
-      line-height: 2;
-    }
-    .back {
-      margin-top: 40px;
-      display: block;
+      background-color: #f7f1f1;
+      margin-top: auto;
     }
   </style>
 </head>
 <body>
 
-  <h1>چشم‌هایت اگر مرز داشت...</h1>
-  <time>۱۴۰۴/۲/۲۰</time>
-  <p>
-    چشم‌هایت اگر مرز داشت، من این‌همه آواره نبودم... <br>
-    تمام من، در نگاه تو گم شد.
-  </p>
+  <header>
+    <h1>یادداشت‌های زینب</h1>
+    <nav>
+      <a href="index.html">خانه</a>
+      <a href="categories.html">دسته‌بندی</a>
+    </nav>
+  </header>
 
-  <a class="back" href="index.html">← برگشت به صفحه اصلی</a>
+  <div class="container">
+    <h2>اولین نوشته‌ام: یک روز بارانی</h2>
+
+    <!-- عکس اضافه شده -->
+    <img class="image" src="images/rainy-day.jpg" alt="یک روز بارانی">
+
+    <div class="content">
+      <p>امروز یک روز بارانی بود. با اینکه همیشه باران رو دوست داشتم، ولی امروز بیشتر از همیشه احساس کردم که چقدر آرامش‌بخشه. وقتی به پنجره نگاه می‌کنم، قطرات باران رو می‌بینم که به شیشه می‌چسبن و بعد به تدریج می‌ریزن. این حس رو همیشه دوست داشتم. گاهی وقت‌ها فکر می‌کنم، شاید بهترین لحظات زندگی همون‌هایی هستند که بی‌صدا و بدون سر و صدا می‌گذرن...</p>
+      <p>خیلی وقت‌ها وقتی در دنیای پرهیاهو زندگی می‌کنیم، فراموش می‌کنیم که چقدر نیاز داریم به آرامش. باران برای من همون آرامشه. هیچ‌چیز به اندازه‌ی یک روز بارانی نمی‌تونه به من آرامش بده. به همین دلیل، من هم مثل همیشه، زیر بارون قدم می‌زنم و از صدای طبیعت لذت می‌برم.</p>
+    </div>
+  </div>
+
+  <footer>
+    طراحی شده با عشق توسط زینب | 🗿 کاکاسنگی
+  </footer>
 
 </body>
 </html>

@@ -21,6 +21,7 @@
     body {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
     }
 
     header {
@@ -75,10 +76,23 @@
       font-size: 14px;
       color: #888;
       background-color: #f7f1f1;
+      margin-top: auto;
     }
 
-    .hits {
-      margin-top: 10px;
+    .category-list a {
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
+      color: #555;
+      text-decoration: none;
+    }
+
+    .category-list a:hover {
+      color: #b0413e;
+    }
+
+    .post-list {
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -87,24 +101,21 @@
   <header>
     <h1>یادداشت‌های زینب</h1>
     <nav>
-      <a href="/blogg/">خانه</a>
-      <a href="#">شعر</a>
-      <a href="#">داستان</a>
-      <a href="#">شخصی</a>
-      <a href="#">سفرنامه</a>
+      <a href="index.html">خانه</a>
+      <a href="categories.html">دسته‌بندی</a>
     </nav>
   </header>
 
   <div class="container">
-    <h2><a class="post-title" href="note1.html">اولین نوشته‌م: یک روز بارانی</a></h2>
+    <!-- نمایش یادداشت‌ها -->
+    <div class="post-list">
+      <h2><a class="post-title" href="1.html">اولین نوشته‌ام: یک روز بارانی</a></h2>
+      <h2><a class="post-title" href="note2.html">دومین نوشته‌ام: سفر به شمال</a></h2>
+    </div>
   </div>
 
   <footer>
     طراحی شده با عشق توسط زینب | 🗿 کاکاسنگی
-    <div class="hits">
-      <div id="goatcounter"></div>
-      <script data-goatcounter="https://szm515.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-    </div>
   </footer>
 
 </body>

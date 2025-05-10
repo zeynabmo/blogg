@@ -106,9 +106,15 @@
     </div>
   </div>
 
-    <!-- iframe برای نمایش فرم نظرات -->
-    <iframe src="comments.html" width="100%" height="400px" frameborder="0"></iframe>
-  </div>
+<div id="comments"></div>
+<script>
+  fetch('comments.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('comments').innerHTML = html;
+    });
+</script>
+
   
   <footer>
     طراحی شده با عشق توسط زینب | 🗿 کاکاسنگی

@@ -1,19 +1,15 @@
-<!-- comments.html -->
-<div class="comment-section">
-  <h2>نظرات کاربران</h2>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLSc9johE77dWehEwnaF0cGbwnP0V2MlV8V0X-5s3FZyQg9Eyg/viewform?usp=pp_url" method="post" target="_blank">
-    <div>
-      <label for="name">نام شما:</label>
-      <input type="text" id="name" name="entry.2005620554" required>
-    </div>
-    <div>
-      <label for="email">ایمیل شما:</label>
-      <input type="email" id="email" name="entry.1045781291" required>
-    </div>
-    <div>
-      <label for="comment">نظر شما:</label>
-      <textarea id="comment" name="entry.1166974658" rows="5" required></textarea>
-    </div>
-    <button type="submit">ارسال نظر</button>
-  </form>
-</div>
+<h3>ارسال نظر</h3>
+<form action="https://formspree.io/f/کد-فرم-تو" method="POST">
+  <label>نام:</label><br>
+  <input type="text" name="name" required><br><br>
+
+  <label>پیام:</label><br>
+  <textarea name="message" rows="5" required></textarea><br><br>
+
+  <label>
+    <input type="checkbox" name="private" value="true">
+    ارسال به صورت خصوصی
+  </label><br><br>
+
+  <button type="submit">ارسال</button>
+</form>

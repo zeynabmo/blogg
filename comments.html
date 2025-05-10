@@ -1,5 +1,5 @@
 <h3>ارسال نظر</h3>
-<form action="https://formspree.io/f/کد-فرم-تو" method="POST">
+<form id="comment-form">
   <label>نام:</label><br>
   <input type="text" name="name" required><br><br>
 
@@ -12,4 +12,29 @@
   </label><br><br>
 
   <button type="submit">ارسال</button>
+  <p id="response-message" style="color: green; display: none;">✅ نظر شما با موفقیت ارسال شد.</p>
 </form>
+
+<script>
+document.getElementById('comment-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const data = new FormData(form);
+
+  fetch('https://formspree.io/f/کد-فرم-تو', {
+    method: 'POST',
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      document.getElementById('response-message').style.display = 'block';
+      form.reset();
+    } else {
+      alert("خطا در ارسال نظر. لطفاً دوباره تلاش کنید.");
+    }
+  });
+});
+</script>
